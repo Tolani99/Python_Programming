@@ -4,13 +4,13 @@ Question 4
 Consider the data set “fish_data.csv” that contains
 information about two types of fish.
 Rows associate with each fish and
-in columns their type, the age of the fish, 
+in columns their type, the age of the fish,
 water temperature in degrees
 Celsius, and the length of the fish is recorded.
 (a) Let the length variable (length of the fish)
 in the data set be dependent on the age and water temperature.
-i. Consider the first 60 rows and find parameters 
-for the linear regression where we consider the 
+i. Consider the first 60 rows and find parameters
+for the linear regression where we consider the
 loss function to be the square of residuals.
 Provide the regression function with the computed
 parameters in the pdf file.

@@ -17,4 +17,3 @@ df = pd.read_csv('fish_data.csv')
 
 # Display the first few rows
 # print(df.head())
-
