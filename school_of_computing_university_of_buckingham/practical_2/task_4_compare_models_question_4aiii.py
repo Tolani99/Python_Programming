@@ -1,6 +1,11 @@
-from basic_modules import np
-from basic_modules import df
-from basic_modules import sm
+"""
+Question 4aiii.
+Use the remaining 10 rows (i.e. rows 61–70) as your test data
+and discuss your models in items i. and ii. Which one of the
+models do you recommend?
+"""
+# Import basic modules
+from basic_modules import np, df, sm
 
 # Extract the relevant columns for training and testing
 age_train = df.iloc[:60, 1].values
@@ -11,8 +16,14 @@ water_temp_test = df.iloc[60:70, 2].values
 length_test = df.iloc[60:70, 3].values
 
 # Define the feature map for the non-linear regression
-def feature_map(x1, x2):
-    return np.array([1, x1, x2, x1 * x2])
+def feature_map(x_one, x_two):
+    """
+    This function defines the feature map for the 
+    non-linear regression, returns the required
+    array.
+    """
+    return np.array([1, x_one, x_two, x_one * x_two])
+
 
 # Linear regression
 X_train_linear = np.array([age_train, water_temp_train]).T
@@ -32,4 +43,3 @@ theta_nonlinear = np.linalg.inv(X_train_nonlinear.T @ X_train_nonlinear) @ X_tra
 y_pred_nonlinear = X_test_nonlinear @ theta_nonlinear
 mse_nonlinear = np.mean((length_test - y_pred_nonlinear)**2)
 print("Non-linear regression MSE:", mse_nonlinear)
-
