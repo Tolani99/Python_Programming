@@ -35,12 +35,12 @@ for key in keys:
     if key in mapping:
         print(key, mapping[key])
     else:
-        print("{} not in mapping".format(key))
+        print(f"{key} not in mapping")
 
 
 print("Issues with Keys")
 print("================")
-        
+
 # Be careful with what you use as keys!
 # If all keys are of the same type, you won't run
 #  into these issues
@@ -58,4 +58,3 @@ print(mapping)
 
 mapping['A'] = 'abc'
 print(mapping)
-

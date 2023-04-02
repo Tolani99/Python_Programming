@@ -1,4 +1,3 @@
-
 """
 This implement a simple contact list that maps
 names to phone numbers.
@@ -9,13 +8,11 @@ contacts = {'Scott Rixner': '1-101-555-1234',
             'Jane Doe': '1-103-555-9012'}
 
 #Value Lookup
-def lookup(contacts, name):
+def lookup(contact, name):
     """
     Lookup name in contacts and return phone number.
     If name is not in contacts, return an empty string.
     """
-    if name in contacts:
-        return contacts[name]
-    else:
-        return ""
-
+    if name in contact:
+        return contact[name]
+    return ""
