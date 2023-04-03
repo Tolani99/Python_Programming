@@ -26,7 +26,7 @@ for language in popularity[1:]:
     print(format_string.format(*language))
 
 print("")
-    
+
 # Finding/selecting items
 
 # What was Python's popularity in 1997?
@@ -48,9 +48,7 @@ def find_row(table, row):
         if table[idx][0] == row:
             return idx
     return -1
-    
+
 idx1997 = find_col(popularity, 1997)
 idxpython = find_row(popularity, "Python")
 print("Python's popularity in 1997:", popularity[idxpython][idx1997])
-
-
