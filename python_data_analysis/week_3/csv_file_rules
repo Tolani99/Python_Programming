@@ -1,0 +1,13 @@
+Most well-formed CSV files adhere to the following "rules":
+
+1. Fields are separated by a single delimiter character, which is often a comma (,).
+
+2. Rows are separated by a newline character.
+
+3. Fields are interpreted as plain text.
+
+4. Fields can be quoted by a quote character, which is often a double quote (").
+
+5. Quoted fields can contain the delimiter character and/or newlines within them.
+
+6. Each row contains the same number of fields in the same order.
