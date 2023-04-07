@@ -11,3 +11,9 @@ Most well-formed CSV files adhere to the following "rules":
 5. Quoted fields can contain the delimiter character and/or newlines within them.
 
 6. Each row contains the same number of fields in the same order.
+
+Note that CSV files are not required to follow these conventions.  While most files will, there are some programs that do not adhere to these rules and follow their own conventions.
+
+If a CSV file does not follow these rules, you often need to fix the files manually by editing them yourself to conform to some set of rules that the program you are using can handle.
+
+Sometimes the first row of a CSV file will be a header row that contains the names of the fields instead of data
