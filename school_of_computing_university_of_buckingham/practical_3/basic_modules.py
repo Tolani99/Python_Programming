@@ -13,7 +13,7 @@ import statsmodels.api as sm
 
 
 # Load the data into a pandas dataframe
-df = pd.read_csv('fish_data.csv')
+df = pd.read_csv('Octane_rating.csv')
 
 # Display the first few rows
 # print(df.head())
