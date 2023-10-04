@@ -53,7 +53,22 @@ def mergeSort(arr, l, r):
         merge(arr, l, m, r)
 
 # Drive code to test above
-arr = [23, 11, 19, 2, 15, 9]
+print("Input the array you want to test: ")
+
+# Accepting input as a string
+input_string = input("Enter a list of integers separated by space: ")
+
+# Splitting the input string into individual elements
+input_list = input_string.split()
+
+# Converting each element to an integer
+try:
+    # Using list comprehension to convert elements to integers
+    arr = [int(num) for num in input_list]
+    print("List of integers:", arr)
+except ValueError:
+    print("Invalid input. Please enter integers separated by space.")
+
 n = len(arr)
 print("Given array is: ")
 for i in range(n):
