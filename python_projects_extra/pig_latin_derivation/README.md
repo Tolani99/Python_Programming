@@ -1,0 +1,1 @@
+The Pig Latin derivation project involves creating a program or script that converts regular English text into Pig Latin. Pig Latin is a playful language transformation used for amusement, often in word games or as a form of coded communication among friends
